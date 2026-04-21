@@ -92,6 +92,18 @@ class Library
         
     }
 }
+   public void DeleteBook(int index)
+{
+    if (index >= 0 && index < books.Count)
+    {
+        books.RemoveAt(index);
+        Console.WriteLine("Book deleted successfully.");
+    }
+    else
+    {
+        Console.WriteLine("Index out of range.");
+    }
+}
 class Program
     {
     static void Main()
